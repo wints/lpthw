@@ -1,13 +1,17 @@
+# split is a new function
 def break_words(stuff):
 	"""This function will break up words for us."""
 	words = stuff.split(' ')
 	return words
 
+# sorted is a new function; sorts alphabetically BUT capitalized words first
 def sort_words(words):
 	"""Sorts the words."""
 	return sorted(words)
 
 # 'popping it off' also removes it from the list until variable is overwritten
+# the integer position in the pop functions indicates position in the list...
+# ...created by split function
 def print_first_word(words):
 	"""Prints the first word after popping it off."""
 	word = words.pop(0)
